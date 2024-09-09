@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricardo's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></head>
+<body>
+    <nav class="navbar">
+        <a href="#HOME">HOME</a>
+        <a href="#ABOUT">ABOUT</a>
+        <div>
+            <img src="content/wizod.gif" alt="wizard">
+        </div>
+        <a href="#">PROJECTS</a>
+        <a href="#">EMAIL</a>
+    </nav>
+    <div class="intro" id="HOME">
+        <img src="content/meAndDogs-removebg-preview.png" alt="Pups" class="meanddog">
+        <div class="circle"></div>
+        <div class="circle-two"></div>
+        <div class="description">
+            <h1>RICARDO REYES</h1>
+            Welcome to my page. This portfolio showcases my life and various projects I've worked on. Enjoy exploring!
+            <p>Junior @ TAMUK</p>
+            <img src="content/javelina.png" alt="Javeline" class="pig">
+        </div>  
+    </div>
+    <div class="about" id="ABOUT">
+        <div class="about-info">
+            <div>
+                <div class="sprite">
+                    <h1>ABOUT</h1>
+                    <img src="content/red-up.gif" alt="Up">
+                    <img src="content/red-down.gif" alt="Down">
+                    <img src="content/red-left.gif" alt="Left">
+                    <img src="content/red-right.gif" alt="Right">
+                </div>
+                <p class="about-p">I enjoy bad movies and good music :) </p>
+                <div class="education">
+                    <h3 class="school">Education:</h3>
+                    <p class="school">Texas A&M University Kingsville</p>
+                    <p class="school">Computer Science; Spring 26</p>
+                    <p class="school2">Wharton County Junior College</p>
+                    <p class="school">Computer Science; 21-23</p>
+                </div>
+                <div>
+                    <h3 class="school2">Work Experience:</h3>
+                    <p class="school">Walmart DC</p>
+                    <p class="school">Forklift Operator; 21-22</p>
+                    <p class="school2">Chuy's Tex-Mex Restaurant</p>
+                    <p class="school">Server 20-21</p>
+                </div>
+            </div>
+            <div class="languages">
+                <i class="fa-brands fa-python"></i>
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-golang"></i>
+                <i class="fa-brands fa-java"></i>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="slides">
+                <img src="content/alien.gif" alt="alien" id="alien-gif" class="slide">
+                <img src="content/squatch.gif" alt="squatch" id="squatch-gif" class="slide">
+                <img src="content/trainer.png" alt="trainer" id="trainer-gif" class="slide">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
