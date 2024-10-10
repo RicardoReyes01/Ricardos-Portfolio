@@ -217,13 +217,11 @@ h3{
     overflow: hidden;
 }
 
-/* Styling for the slides container */
 .slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
 
-/* Styling for each slide */
 .slide {
     min-width: 100%;
     display: flex;
@@ -261,7 +259,6 @@ h3{
     right: 0px;
 }
 
-/* Ensure the navigation buttons are above the slides */
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
@@ -276,4 +273,148 @@ h3{
     height: 650px;
     width: 400px;
     margin: 165px 0;
+}
+
+.project-title {
+    text-align: center;
+    margin-top: 150px;
+    color: white;
+    background-color: #363636;
+    padding: 25px 0px;
+    max-width: 250px; 
+    margin: 150px auto 25px; 
+    border-radius: 20px;
+}
+
+.container{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; /* Add space between cards */
+}
+
+.card{
+    width: 30%; /* Make the card width responsive */
+    min-width: 300px; /* Prevent the card from shrinking too much */
+    height: auto; /* Let height adjust based on content */
+    margin: 20px; /* Adjust margins for better spacing */
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card img{
+    width: 100%; 
+    height: auto; 
+    transition: transform 0.5s ease-in-out;
+}
+
+.card-description{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: -300px; 
+    background: rgba(27, 27, 27, 0.8); 
+    color: white;
+    text-align: center;
+    transition: bottom 0.5s ease-in-out;
+}
+
+/* Hover effect on the card */
+.card:hover .card-description {
+    bottom: 50px; /* Adjust this based on how much space you want the description to cover */
+}
+
+.card:hover img{
+    transform: scale(1.1) rotate(-3deg);
+}
+
+.contact-container {
+    max-width: 1000px;
+    margin: 150px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #363636;
+    
+}
+
+.contact-container h1 {
+    text-align: center;
+    color: white;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.form-section {
+    margin-bottom: 30px;
+}
+
+.form-section h2 {
+    color: white;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: white;
+}
+
+input, textarea {
+margin-bottom: 15px;
+padding: 10px;
+font-size: 1em;
+border: 1px solid #ddd;
+border-radius: 4px;
+}
+
+input:focus, textarea:focus {
+outline: none;
+border-color: #007BFF;
+}
+
+button {
+padding: 10px;
+font-size: 1em;
+color: #fff;
+background-color: #007BFF;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+button:hover {
+background-color: #0056b3;
+}
+@media (max-width: 768px) {
+    .card {
+        width: 50%; /* Take up more space on smaller screens */
+        min-width: 450px;
+        bottom: -200px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 90%; /* On very small screens, cards take almost the full width */
+        margin: 10px;
+        bottom: -200px;
+    }
+
+
 }
